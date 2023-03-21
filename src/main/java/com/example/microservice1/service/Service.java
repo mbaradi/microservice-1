@@ -26,4 +26,9 @@ public class Service {
         return Mono.just("Successful").log();
 
     }
+    public Flux<String> getFluxString(){
+
+        return Flux.just("This ", "is a ", "sample ", "application").log();
+
+    }
 }

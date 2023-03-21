@@ -35,4 +35,10 @@ public class Controller {
         return service.showFlow();
 
     }
+    @GetMapping(value = "/getFluxString", produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
+    public Flux<String> getFluxString(){
+
+        return service.getFluxString();
+
+    }
 }
